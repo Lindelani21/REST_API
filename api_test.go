@@ -8,7 +8,7 @@ import (
 )
 
 func TestAPI(t *testing.T) {
-	// Initialize test DB (consider using a test database)
+	//  Initialize test DB (consider using a test database)
 	InitDB()
 	defer CloseDB()
 
