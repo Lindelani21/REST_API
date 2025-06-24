@@ -10,7 +10,7 @@ import (
 )
 
 func GetBooksHandler(w http.ResponseWriter, r *http.Request) {
-	rows, err := DB.Query(context.Background(), "SELECT id, title, author FROM books")
+	rows, err := DB.Query(context.Background(), "SELECT id, title , author FROM books")
 	if err != nil {
 		http.Error(w, "Failed to fetch books", http.StatusInternalServerError)
 		return
